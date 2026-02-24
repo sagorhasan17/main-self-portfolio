@@ -28,7 +28,7 @@ const NavBar = () => {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
-          Sagor Hossain <span className="text-primary">.</span>
+          <span className="text-primary transition-all duration-400 hover:text-foreground text-2xl md:text-3xl"> {`<Sagor/>`}</span>
         </a>
 
         {/* desktop menu */}
