@@ -1,22 +1,37 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../components/Button";
 
 const navLinks = [
-  { href: "#Home", label: "Home" },
-  { href: "#About", label: "About" },
-  { href: "#Projects", label: "Projects" },
-  { href: "#Experience", label: "Experience" },
+  { href: "/", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
 ];
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScroll, setScroll] = useState(false);
+
+
+  useEffect(() =>{
+
+    const handleScroll = () =>{
+      setScroll(window.scrollY > 50);
+    }
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+
+  },[])
+
+
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-5">
+    <header className={`fixed top-0 left-0 right-0 transition duration-500 ${isScroll ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a className="text-xl font-bold tracking-tight hover:text-primary user-select-none cursor-pointer transition">
-          SA <span className="text-primary">.</span>
+        <a className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
+          Sagor Hossain <span className="text-primary">.</span>
         </a>
 
         {/* desktop menu */}
@@ -35,7 +50,7 @@ const NavBar = () => {
         </div>
 
         {/* CTA button */}
-        <div className="hidden md:block">
+        <div className="hidden md:block" id="contact">
           <Button size="sm">Hire Me..</Button>
         </div>
         {/* Mobile menu bar */}
@@ -52,12 +67,13 @@ const NavBar = () => {
               <a
                 key={index}
                 href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
               >
                 {link.label}
               </a>
             ))}
-            <Button>Hire Me..</Button>
+            <Button onClick={() => setIsMobileMenuOpen(false)} size="lg">Hire Me..</Button>
           </div>
         </div>
       )}
