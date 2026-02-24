@@ -141,7 +141,7 @@ const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/public/profile-photo.png"
+                  src="/public/profile-photo.jpg"
                   alt="sagor hasan photo"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />

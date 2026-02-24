@@ -34,7 +34,7 @@ const About = () => {
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="text-foreground text-6xl font-bold tracking-wider uppercase">
+              <span className="text-foreground text-3xl md:text-6xl font-bold tracking-wider uppercase">
                 About Me
               </span>
             </div>

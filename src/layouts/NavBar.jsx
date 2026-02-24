@@ -51,7 +51,7 @@ const NavBar = () => {
 
         {/* CTA button */}
         <div className="hidden md:block" id="contact">
-          <Button size="sm">Hire Me..</Button>
+          <Button size="md">Hire Me.. </Button>
         </div>
         {/* Mobile menu bar */}
         <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={() => setIsMobileMenuOpen(prev => !prev)}>

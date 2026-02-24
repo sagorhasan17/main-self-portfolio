@@ -95,7 +95,7 @@ const Contact = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-6">
-          <span className="text-4xl md:text-5xl font-extrabold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground uppercase">
+          <span className="text-3xl md:text-5xl font-extrabold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground uppercase">
             Contact Me
           </span>
           {/* <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">

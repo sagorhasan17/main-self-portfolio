@@ -1,9 +1,9 @@
 import {
-    Github,
-    Linkedin,
-    MailCheck,
-    PhoneIncoming,
-    Youtube
+  Github,
+  Linkedin,
+  MailCheck,
+  PhoneIncoming,
+  Youtube
 } from "lucide-react";
 const Footer = () => {
   return (

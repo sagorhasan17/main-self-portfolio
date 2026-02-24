@@ -36,8 +36,7 @@ const Education = () => {
         {/* Section Header */}
         <div className="mb-8 text-center">
           <span
-            className="text-secondary-foreground text-6xl
-           font-extrabold tracking-wider uppercase animate-fade-in"
+            className="text-secondary-foreground text-3xl md:text-6xl font-bold tracking-wider uppercase animate-fade-in"
           >
             Education
           </span>
