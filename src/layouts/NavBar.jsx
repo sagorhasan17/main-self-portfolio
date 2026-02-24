@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
-
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "#about", label: "About" },
@@ -13,22 +13,19 @@ const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScroll, setScroll] = useState(false);
 
-
-  useEffect(() =>{
-
-    const handleScroll = () =>{
+  useEffect(() => {
+    const handleScroll = () => {
       setScroll(window.scrollY > 50);
-    }
-    window.addEventListener('scroll', handleScroll)
+    };
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll)
-
-  },[])
-
-
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 transition duration-500 ${isScroll ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
+    <header
+      className={`fixed top-0 left-0 right-0 transition duration-500 ${isScroll ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}
+    >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
           Sagor Hossain <span className="text-primary">.</span>
@@ -51,10 +48,16 @@ const NavBar = () => {
 
         {/* CTA button */}
         <div className="hidden md:block" id="contact">
-          <Button size="md">Hire Me.. </Button>
+          <AnimatedBorderButton>
+            {/* <Download className="w-5 h-5" /> */}
+            <button>Hire Me</button>
+          </AnimatedBorderButton>
         </div>
         {/* Mobile menu bar */}
-        <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={() => setIsMobileMenuOpen(prev => !prev)}>
+        <button
+          className="md:hidden p-2 text-foreground cursor-pointer"
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+        >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
@@ -73,7 +76,9 @@ const NavBar = () => {
                 {link.label}
               </a>
             ))}
-            <Button onClick={() => setIsMobileMenuOpen(false)} size="lg">Hire Me..</Button>
+            <Button onClick={() => setIsMobileMenuOpen(false)} size="lg">
+              Hire Me..
+            </Button>
           </div>
         </div>
       )}
