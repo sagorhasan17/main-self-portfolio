@@ -1,4 +1,5 @@
 import { Award, CalendarDays, School } from "lucide-react";
+import DotBackground from "../components/DotBackground";
 
 const educations = [
   {
@@ -27,6 +28,7 @@ const educations = [
 const Education = () => {
   return (
     <section id="education" className="py-10 relative overflow-hidden">
+      <DotBackground />
       <div
         className="absolute top-1/2 left-1/4 w-96
        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"

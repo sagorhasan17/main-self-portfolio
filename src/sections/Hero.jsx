@@ -10,8 +10,10 @@ import {
 import heroBg from "../assets/hero-bg.jpg";
 import profile from "../assets/profile-photo.jpg";
 
+import { useTypewriter } from "react-simple-typewriter";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
+import DotBackground from "../components/DotBackground";
 
 const skills = [
   "React",
@@ -28,13 +30,19 @@ const skills = [
   "Git",
   "GitHub Actions",
 ];
-
+  
 const Hero = () => {
+  const [text] = useTypewriter({
+  words: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
+  loop: true,
+});
+
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden select-none"
     >
+      <DotBackground />
       {/* background image */}
       <div className="absolute inset-0">
         <img
@@ -46,21 +54,6 @@ const Hero = () => {
       </div>
       {/* add gradient */}
 
-      {/* dot pattern */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(100)].map(() => (
-          <div
-            className="absolute w-1.5 h-1.5 rounded-full opacity-60"
-            style={{
-              backgroundColor: "#5271FF",
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 3}s`,
-            }}
-          />
-        ))}
-      </div>
 
       {/* content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
@@ -76,9 +69,13 @@ const Hero = () => {
 
             {/* headline */}
             <div className="space-y-4">
-              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100 glass px-4 w-2xs md:w-full rounded-md animate-pulse">
-                I`m Md Sagor Hossain
-                </h1>
+              <h1 className="text-[18px] md:text-4xl lg:text-5xl font-bold text-primary leading-tight animate-fade-in animation-delay-100 glass px-2 md:w-full rounded-md animate-pulse">
+                <span className="text-muted-foreground text-md md:text-5xl">Hello</span>, I`m Md Sagor Hossain
+              </h1>
+              <h1 className="text-xl md:text-4xl lg:text-4xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent leading-tight px-4 w-2xs md:w-full">
+                {`I'm a ${text}`}
+              </h1>
+              
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I'm Sagor Hossain — a Web Developer in React, Next.js, and
                 TypeScript. I build scalable, performant web Website that users

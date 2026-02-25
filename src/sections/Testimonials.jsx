@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useState } from "react";
+import DotBackground from "../components/DotBackground";
 
 const testimonials = [
   {
@@ -50,6 +51,7 @@ const Testimonials = () => {
   };
   return (
     <section id="testimonials" className="py-10 relative overflow-hidden">
+      <DotBackground />
       <div
         className="absolute top-1/2 left-1/2
        w-200 h-200 bg-primary/5

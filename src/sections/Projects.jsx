@@ -1,5 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import DotBackground from "../components/DotBackground";
 const projects = [
   {
     title: "Fintech Dashboard",
@@ -42,6 +43,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="py-10 relative overflow-hidden select-none">
+      <DotBackground />
       {/* Bg glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />

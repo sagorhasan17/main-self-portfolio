@@ -52,7 +52,7 @@ const NavBar = () => {
         <div className="hidden md:block" id="contact">
           <AnimatedBorderButton>
             {/* <Download className="w-5 h-5" /> */}
-            <button>Hire Me</button>
+            Hire Me
           </AnimatedBorderButton>
         </div>
         {/* Mobile menu bar */}
