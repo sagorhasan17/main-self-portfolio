@@ -48,7 +48,7 @@ const Hero = () => {
 
       {/* dot pattern */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(65)].map(() => (
+        {[...Array(100)].map(() => (
           <div
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
@@ -76,15 +76,9 @@ const Hero = () => {
 
             {/* headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
-                <br />
-                experiences with
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                  precision.
-                </span>
-              </h1>
+              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100 glass px-4 w-2xs md:w-full rounded-md animate-pulse">
+                I`m Md Sagor Hossain
+                </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I'm Sagor Hossain — a Web Developer in React, Next.js, and
                 TypeScript. I build scalable, performant web Website that users

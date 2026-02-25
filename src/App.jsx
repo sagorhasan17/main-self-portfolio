@@ -1,3 +1,4 @@
+import UpToButton from "./components/UpToButton";
 import Footer from "./layouts/Footer";
 import NavBar from "./layouts/NavBar";
 import About from "./sections/About";
@@ -21,6 +22,7 @@ const App = () => {
         <Testimonials />
         <Contact />
       </main>
+      <UpToButton />
       <Footer />
     </div>
   );

@@ -6,8 +6,10 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
 ];
+
+
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,7 +30,7 @@ const NavBar = () => {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
-          <span className="text-primary transition-all duration-400 hover:text-foreground text-2xl md:text-3xl"> {`<Sagor/>`}</span>
+          <span className="text-primary animate-pulse transition-all duration-400 hover:text-foreground text-2xl md:text-3xl"> {`<Sagor •/>`}</span>
         </a>
 
         {/* desktop menu */}

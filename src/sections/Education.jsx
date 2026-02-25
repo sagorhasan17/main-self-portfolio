@@ -26,7 +26,7 @@ const educations = [
 
 const Education = () => {
   return (
-    <section id="experience" className="py-10 relative overflow-hidden">
+    <section id="education" className="py-10 relative overflow-hidden">
       <div
         className="absolute top-1/2 left-1/4 w-96
        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
@@ -80,11 +80,11 @@ const Education = () => {
                   <div
                     className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
                   >
-                    <span className="text-4xl text-primary font-bold">
+                    <span className="md:text-4xl text-2xl text-primary font-bold">
                       {edu.title}
                     </span>
-                    <h3 className="text-xl text-muted-foreground font-semibold mt-2 mb-1 flex items-center gap-2">
-                      <School />
+                    <h3 className="md:text-xl text-md text-muted-foreground font-semibold mt-2 mb-1 flex items-center gap-2">
+                      <School size={20} />
                       {edu.institution}
                     </h3>
                     <p className="text-muted-foreground my-4 mb-1 flex gap-2">

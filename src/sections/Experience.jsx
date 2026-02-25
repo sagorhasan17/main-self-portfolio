@@ -55,7 +55,7 @@ const Education = () => {
             Career Journey
           </span>
           <h2
-            className="text-4xl md:text-5xl font-bold
+            className="text-2xl md:text-5xl font-bold
            mt-4 mb-6 animate-fade-in animation-delay-100
             text-secondary-foreground"
           >
