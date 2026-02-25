@@ -8,11 +8,11 @@ import {
 } from "lucide-react";
 
 import heroBg from "../assets/hero-bg.jpg";
-import profile from "../assets/profile-photo.jpg";
 
 import { useTypewriter } from "react-simple-typewriter";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
+import CodeCard from "../components/CodeCard";
 import DotBackground from "../components/DotBackground";
 
 const skills = [
@@ -56,7 +56,7 @@ const Hero = () => {
 
 
       {/* content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-6  relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* left content text content */}
           <div className="space-y-8">
@@ -69,7 +69,7 @@ const Hero = () => {
 
             {/* headline */}
             <div className="space-y-4">
-              <h1 className="text-[18px] md:text-4xl lg:text-5xl font-bold text-primary leading-tight animate-fade-in animation-delay-100 glass px-2 md:w-full rounded-md animate-pulse">
+              <h1 className="text-[18px] md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent leading-tight animate-fade-in animation-delay-100 glass px-2 md:w-full rounded-md animate-pulse">
                 <span className="text-muted-foreground text-md md:text-5xl">Hello</span>, I`m Md Sagor Hossain
               </h1>
               <h1 className="text-xl md:text-4xl lg:text-4xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent leading-tight px-4 w-2xs md:w-full">
@@ -126,37 +126,8 @@ const Hero = () => {
 
           <div className="relative animate-fade-in animation-delay-300">
             {/* profile image */}
-            <div className="relative max-w-md mx-auto">
-              <div
-                className="absolute inset-0 
-              rounded-3xl bg-linear-to-br 
-              from-primary/30 via-transparent 
-              to-primary/10 blur-2xl animate-pulse"
-              />
-              <div className="relative glass rounded-3xl p-2 glow-border">
-                <img
-                  src={profile}
-                  alt="sagor hasan photo"
-                  className="w-full aspect-4/5 object-cover rounded-2xl"
-                />
-                {/* Floating Badge */}
-                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">
-                      Available for work
-                    </span>
-                  </div>
-                </div>
-                {/* Floating Badge  */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500 user-select-none">
-                  <div className="text-2xl font-bold text-primary">1+</div>
-                  <div className="text-xs text-muted-foreground">
-                    Years Exp.
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CodeCard />
+     
           </div>
         </div>
         {/* Skills Section */}

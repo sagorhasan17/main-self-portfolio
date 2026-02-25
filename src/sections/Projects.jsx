@@ -53,7 +53,7 @@ const Projects = () => {
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 animate-fade-in animation-delay-100 text-secondary-foreground uppercase">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 animate-fade-in animation-delay-100 bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent uppercase">
             My Latest Projects
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">

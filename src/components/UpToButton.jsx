@@ -10,7 +10,7 @@ const UpToButton = () => {
   };
 
   const handleScroll = () => {
-    let heightToHidden = 700;
+    let heightToHidden = 500;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
 

@@ -30,7 +30,7 @@ const NavBar = () => {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a href="/" className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
-          <span className="text-primary animate-pulse transition-all duration-400 hover:text-foreground text-2xl md:text-3xl"> {`<Sagor •/>`}</span>
+          <span className="bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent animate-pulse transition-all duration-400 hover:text-foreground text-2xl md:text-3xl"> {`<Sagor •/>`}</span>
         </a>
 
         {/* desktop menu */}
