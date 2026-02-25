@@ -29,7 +29,7 @@ const NavBar = () => {
       className={`fixed top-0 left-0 right-0 transition duration-500 ${isScroll ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
+        <a href="/" className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
           <span className="text-primary animate-pulse transition-all duration-400 hover:text-foreground text-2xl md:text-3xl"> {`<Sagor •/>`}</span>
         </a>
 
