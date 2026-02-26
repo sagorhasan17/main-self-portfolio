@@ -42,7 +42,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-10 relative overflow-hidden select-none">
+    <section
+      id="projects"
+      className="py-10 relative overflow-hidden select-none"
+    >
       <DotBackground />
       {/* Bg glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -53,10 +56,10 @@ const Projects = () => {
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 animate-fade-in animation-delay-100 bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent uppercase">
+          <h2 className="text-2xl md:text-5xl font-bold mt-2 mb-2 animate-fade-in animation-delay-100 bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent uppercase">
             My Latest Projects
           </h2>
-          <p className="text-muted-foreground animate-fade-in animation-delay-200">
+          <p className="text-muted-foreground animate-fade-in animation-delay-200 md:px-20">
             A selection of my recent work, from complex web applications to
             innovative tools that solve real-world problems.
           </p>

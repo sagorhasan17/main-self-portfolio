@@ -45,7 +45,7 @@ const Education = () => {
 
           <p
             className="text-muted-foreground
-           animate-fade-in animation-delay-200 pt-4"
+           animate-fade-in animation-delay-200 pt-4 md:px-90"
           >
             A passionate web developer with experience in the METN stack, eager
             to contribute to innovative projects and grow in the tech industry
