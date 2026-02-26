@@ -132,7 +132,7 @@ const Hero = () => {
 
           {/* right contect like image  */}
 
-          <div className="relative animate-fade-in animation-delay-300 w-88 md:w-full -mt-50 -mb-50 md:mb-0 md:mt-0">
+          <div className="relative animate-fade-in animation-delay-300 w-88 md:w-full -mt-4 md:mb-0">
             {/* profile image */}
             <CodeCard />
      
