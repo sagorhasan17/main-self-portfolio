@@ -1,7 +1,7 @@
 import {
   Github,
   Linkedin,
-  MailCheck,
+  MailCheckIcon,
   PhoneIncoming,
   Youtube
 } from "lucide-react";
@@ -9,7 +9,7 @@ import DotBackground from "../components/DotBackground";
 const Footer = () => {
   return (
     <footer className="container mx-auto px-6 relative">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-10 glass rounded-t-2xl px-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-10 glass rounded-t-2xl px-2  overflow-x-auto whitespace-pre-wrap wrap-break-words">
         <DotBackground />
         <div>
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
@@ -23,8 +23,8 @@ const Footer = () => {
         <div>
           <span>Get in Touch</span>
           <span className="flex gap-2 pt-2">
-            <MailCheck className="text-primary size-6" />
-            <span className="text-muted-foreground text-sm">
+            <MailCheckIcon className="text-primary size-6" />
+            <span className="text-muted-foreground text-[11px] md:text-sm">
               sagor.codealoy@gmail.com
             </span>
           </span>

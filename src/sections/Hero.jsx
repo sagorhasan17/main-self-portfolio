@@ -131,14 +131,14 @@ const Hero = () => {
 
           {/* right contect like image  */}
 
-          <div className="relative animate-fade-in animation-delay-300 w-88 md:w-full -mt-4 md:mb-0">
+          <div className="relative animate-fade-in animation-delay-300 w-88 md:w-full -mt-30 md:mb-0">
             {/* profile image */}
             <CodeCard />
      
           </div>
         </div>
         {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
+        <div className="animate-fade-in animation-delay-600 -mt-30 md:mb-0">
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
