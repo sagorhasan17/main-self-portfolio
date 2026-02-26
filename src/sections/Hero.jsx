@@ -73,8 +73,7 @@ const Hero = () => {
               <h1 className="leading-tight animate-fade-in animation-delay-100 glass px-2 py-1 md:w-full rounded-md animate-pulse">
                 <span className="text-muted-foreground text-md md:text-5xl animate-pulse">Hello</span>, <span className="animate-pulse text-[18px] md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent">I`m Md Sagor Hossain</span>
               </h1>
-              <h1 className="text-xl md:text-4xl lg:text-4xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent leading-tight px-4 w-2xs md:w-full">
-                {`I'm a ${text}`}
+              <h1 className="text-xl md:text-4xl lg:text-4xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent leading-tight pr-4 pl-1 w-2xs md:w-full">{`I'm a ${text}`}
                 <span>
                   <Cursor
                     cursorBlinking
