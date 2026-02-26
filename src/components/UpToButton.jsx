@@ -39,15 +39,8 @@ const UpToButton = () => {
   }, []);
 
   return (
-    <div
-      onClick={goToBtn}
-      className={`
-      fixed md:w-12 md:h-16 w-8 h-10 rounded-full bg-transparent overflow-hidden
-      flex flex-col justify-center items-center
-      bottom-2 right-2 z-50 cursor-pointer hover:scale-110 glass hover:bg-primary/10 hover:text-primary
-      transition-all duration-500 ease-in-out
-      ${showButton ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"}
-    `}
+    <div onClick={goToBtn}
+      className={`fixed md:w-12 md:h-16 w-8 h-10 rounded-full bg-transparent overflow-hidden flex flex-col justify-center items-center bottom-2 right-2 z-50 cursor-pointer hover:scale-110 glass hover:bg-primary/10 hover:text-primary transition-all duration-500 ease-in-out ${showButton ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"}`}
     >
       <button className="btn btn-primary">
         <ArrowUpToLine className="animate-bounce" />

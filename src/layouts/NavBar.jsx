@@ -9,8 +9,6 @@ const navLinks = [
   { href: "#education", label: "Education" },
 ];
 
-
-
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScroll, setScroll] = useState(false);
@@ -29,8 +27,14 @@ const NavBar = () => {
       className={`fixed top-0 left-0 right-0 transition duration-500 ${isScroll ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a href="/" className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition">
-          <span className="bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent animate-pulse transition-all duration-400 hover:text-foreground text-2xl md:text-3xl"> {`<Sagor •/>`}</span>
+        <a
+          href="/"
+          className="text-xl font-bold tracking-tight text-primary hover:text-foreground user-select-none uppercase cursor-pointer transition"
+        >
+          <span className="bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent animate-pulse transition-all duration-400 hover:text-foreground text-2xl md:text-3xl">
+            {" "}
+            {`<Sagor •/>`}
+          </span>
         </a>
 
         {/* desktop menu */}
@@ -52,7 +56,12 @@ const NavBar = () => {
         <div className="hidden md:block" id="contact">
           <AnimatedBorderButton>
             {/* <Download className="w-5 h-5" /> */}
-            Hire Me
+            <a
+              href="https://drive.google.com/file/d/1wy6m2FtPXmwgA1xzPnWz7PxMbN2J3n57/view?usp=sharing"
+              target="_blank"
+            >
+              Hire Me
+            </a>
           </AnimatedBorderButton>
         </div>
         {/* Mobile menu bar */}
