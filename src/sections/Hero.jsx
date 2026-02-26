@@ -9,7 +9,7 @@ import {
 
 import heroBg from "../assets/hero-bg.jpg";
 
-import { useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
 import CodeCard from "../components/CodeCard";
@@ -35,6 +35,7 @@ const Hero = () => {
   const [text] = useTypewriter({
   words: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
   loop: true,
+  typeSpeed:120,
 });
 
   return (
@@ -56,7 +57,7 @@ const Hero = () => {
 
 
       {/* content */}
-      <div className="container mx-auto px-6  relative z-10">
+      <div className="container mx-auto px-6 pt-20 md:pt-1 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* left content text content */}
           <div className="space-y-8">
@@ -69,14 +70,21 @@ const Hero = () => {
 
             {/* headline */}
             <div className="space-y-4">
-              <h1 className="text-[18px] md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent leading-tight animate-fade-in animation-delay-100 glass px-2 md:w-full rounded-md animate-pulse">
-                <span className="text-muted-foreground text-md md:text-5xl">Hello</span>, I`m Md Sagor Hossain
+              <h1 className="leading-tight animate-fade-in animation-delay-100 glass px-2 py-1 md:w-full rounded-md animate-pulse">
+                <span className="text-muted-foreground text-md md:text-5xl animate-pulse">Hello</span>, <span className="animate-pulse text-[18px] md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent">I`m Md Sagor Hossain</span>
               </h1>
               <h1 className="text-xl md:text-4xl lg:text-4xl font-bold bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent leading-tight px-4 w-2xs md:w-full">
                 {`I'm a ${text}`}
+                <span>
+                  <Cursor
+                    cursorBlinking
+                    cursorStyle="|"
+                    cursorColor="#10b981"
+                  />
+                </span>
               </h1>
               
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in pr-22 md:pr-1 animation-delay-200">
                 Hi, I'm Sagor Hossain — a Web Developer in React, Next.js, and
                 TypeScript. I build scalable, performant web Website that users
                 love.
@@ -124,7 +132,7 @@ const Hero = () => {
 
           {/* right contect like image  */}
 
-          <div className="relative animate-fade-in animation-delay-300">
+          <div className="relative animate-fade-in animation-delay-300 w-88 md:w-full -mt-50 -mb-50 md:mb-0 md:mt-0">
             {/* profile image */}
             <CodeCard />
      

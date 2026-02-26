@@ -82,7 +82,7 @@ const Education = () => {
                   <div
                     className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
                   >
-                    <span className="md:text-4xl text-2xl text-primary font-bold">
+                    <span className="md:text-4xl text-2xl bg-linear-to-r from-blue-500 to-green-800 bg-clip-text text-transparent font-bold">
                       {edu.title}
                     </span>
                     <h3 className="md:text-xl text-md text-muted-foreground font-semibold mt-2 mb-1 flex items-center gap-2">
