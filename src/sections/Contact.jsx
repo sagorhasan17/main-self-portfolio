@@ -141,7 +141,7 @@ const Contact = () => {
               </div>
 
               <Button
-                className="w-full"
+                className="w-full flex justify-center gap-4 items-center"
                 type="submit"
                 size="lg"
                 // disabled={isLoading}
