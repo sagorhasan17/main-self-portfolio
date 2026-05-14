@@ -7,21 +7,22 @@ import Education from "./sections/Education";
 // import Experience from './sections/Experience';
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
-import Testimonials from "./sections/Testimonials";
+import Skills from "./sections/Skills";
 
 const App = () => {
   return (
-    
+
     <div className="main-h-screen overflow-x-hidden">
-      
+
       <NavBar />
       <main>
         <Hero />
         <About />
+        <Skills />
         <Projects />
         <Education />
         {/* <Experience /> */}
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       <UpToButton />

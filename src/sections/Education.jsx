@@ -1,4 +1,4 @@
-import { Award, CalendarDays, School } from "lucide-react";
+import { CalendarDays, School } from "lucide-react";
 import DotBackground from "../components/DotBackground";
 
 const educations = [
@@ -93,12 +93,12 @@ const Education = () => {
                       <CalendarDays />
                       {edu.year}
                     </p>
-                    <p
+                    {/* <p
                       className={`flex gap-2 text-sm my-4 border border-primary text-primary p-2 ${edu.grade == "GPA: Ongoing... (8th Semester)" ? "w-70" : "w-30"} rounded-md`}
                     >
                       <Award size={20} />
                       {`GPA: ${edu.grade}`}
-                    </p>
+                    </p> */}
                     <div
                       className={`flex flex-wrap gap-2 mt-4 ${
                         idx % 2 === 0 ? "md:justify-end" : ""

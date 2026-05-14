@@ -15,28 +15,14 @@ import Button from "../components/Button";
 import CodeCard from "../components/CodeCard";
 import DotBackground from "../components/DotBackground";
 
-const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "MongoDB",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Figma",
-  "Git",
-  "GitHub Actions",
-];
-  
+
+
 const Hero = () => {
   const [text] = useTypewriter({
-  words: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
-  loop: true,
-  typeSpeed:120,
-});
+    words: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
+    loop: true,
+    typeSpeed: 120,
+  });
 
   return (
     <section
@@ -82,7 +68,7 @@ const Hero = () => {
                   />
                 </span>
               </h1>
-              
+
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in pr-22 md:pr-1 animation-delay-200">
                 Hi, I'm Sagor Hossain — a Web Developer in React, Next.js, and
                 TypeScript. I build scalable, performant web Website that users
@@ -100,7 +86,7 @@ const Hero = () => {
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 <a
-                  href="https://drive.google.com/file/d/1wy6m2FtPXmwgA1xzPnWz7PxMbN2J3n57/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1cPxyXAlubPW-phfl5tF_9aV8XdMCRmXw/view?usp=sharing"
                   target="_blank"
                 >
                   Download CV
@@ -136,32 +122,7 @@ const Hero = () => {
           <div className="relative animate-fade-in animation-delay-300 w-88 md:w-full -mt-8 md:mb-0">
             {/* profile image */}
             <CodeCard />
-     
-          </div>
-        </div>
-        {/* Skills Section */}
-        <div className="animate-fade-in animation-delay-600 -mt-30 md:mb-0">
-          <p className="text-sm text-muted-foreground mb-6 text-center">
-            Technologies I work with
-          </p>
-          <div className="relative overflow-hidden">
-            <div
-              className="absolute left-0 top-0 bottom-0 w-32
-             bg-linear-to-r from-background to-transparent z-10"
-            />
-            <div
-              className="absolute right-0 top-0 bottom-0 w-32
-             bg-linear-to-l from-background to-transparent z-10"
-            />
-            <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-            </div>
+
           </div>
         </div>
       </div>
@@ -175,8 +136,8 @@ const Hero = () => {
         </a>
       </div>
     </section>
-    
-    
+
+
   );
 };
 
