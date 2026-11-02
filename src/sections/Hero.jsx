@@ -86,7 +86,7 @@ const Hero = () => {
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 <a
-                  href="https://drive.google.com/file/d/1cPxyXAlubPW-phfl5tF_9aV8XdMCRmXw/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1_XAbKQwX3cbIR3lsO9hbaUvZSASr291q/view?usp=sharing"
                   target="_blank"
                 >
                   Download CV
