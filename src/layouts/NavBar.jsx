@@ -110,7 +110,7 @@ const NavBar = () => {
         <div className="hidden md:block" id="contact">
           <AnimatedBorderButton>
             <a
-              href="https://drive.google.com/file/d/1cPxyXAlubPW-phfl5tF_9aV8XdMCRmXw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_XAbKQwX3cbIR3lsO9hbaUvZSASr291q/view?usp=sharing"
               target="_blank"
             >
               Hire Me
